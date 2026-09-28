@@ -25,9 +25,18 @@ echo [2/3] Committing: %MSG%
 git commit -m "%MSG%"
 
 echo [3/3] Pushing to GitHub...
+echo   (this may take a few seconds)
 git push
 
 echo.
-echo   === Done! Check github.com/liyuhuan728/security-tools ===
+if errorlevel 1 (
+  echo   === FAILED ===
+  echo   Something went wrong. Screenshot the red text above and send it over.
+) else (
+  echo   === Done! Check github.com/liyuhuan728/security-tools ===
+)
+echo.
+echo   Note: a line saying "hostfile_replace_entries" or "update_known_hosts"
+echo   is a harmless Windows warning - if you see "Done!" you are fine.
 echo.
 pause
