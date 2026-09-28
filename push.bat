@@ -6,6 +6,9 @@ REM ============================================
 
 cd /d "%~dp0"
 
+REM Portable git is not in system PATH, add it manually
+set "PATH=C:\Users\28638\.workbuddy\binaries\PortableGit\versions\1.2.0\cmd;%PATH%"
+
 echo.
 echo   === Upload to GitHub ===
 echo.
