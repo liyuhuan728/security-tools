@@ -1,0 +1,10 @@
+# C++ 编译产物（小熊猫 C++ 编译时生成，不需要上传）
+*.exe
+*.o
+*.out
+*.obj
+
+# 编辑器/系统垃圾
+.vscode/
+.DS_Store
+Thumbs.db
